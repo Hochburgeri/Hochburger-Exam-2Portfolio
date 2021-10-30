@@ -1,0 +1,421 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    font-family: "Arial", sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    width: 100%;
+    max-width: 1920px;
+    overflow-x: hidden;
+  }
+
+  /*navigation bar on top of webpage*/
+
+  .navigation-bar-container{
+    position: sticky;
+    height: 70px;
+    background: #32B5CC;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .logo-container{
+    position: absolute;
+    margin-right: 40px;
+    float: left;
+    line-height: 70px;
+  }
+  .logo-container a, .logo-container a:visited{
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-container{
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+  .navbar{
+    float: right;
+  }
+  .navbar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    z-index: 9999;
+  }
+  .navbar ul li{
+    float: left;
+    position: relative;
+  }
+  .navbar ul li a, .navbar ul li a:visited{
+    display: block;
+    padding: 0px 20px;
+    line-height: 70px;
+    background: #32B5CC;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar ul li a:hover, .navbar ul li a:visited:hover{
+    background: #EF94DD;
+    color: #fff;
+  }
+  .navbar ul li ul li{
+    min-width: 190px;
+  }
+  .navbar ul li ul li a{
+    padding: 15px;
+    line-height: 20px;
+  }
+  .nav-dropdown{
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+  }
+
+/*image 1, grad year, name, image of myself, and intro stored in here*/
+
+   .container1 {
+    height: 100%;
+    background-image: url(Assets/foggyforest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+    .first-box {
+        width: 60%;
+        background-color: #32B5CC;
+        margin: auto;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        padding-bottom: 20px;
+    }
+
+    .combine {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .banner {
+        background-color: white;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        width: 70%;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+  .name {
+      background-color: black;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      width: 70%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin: auto;
+      height: 50px;
+  }
+
+  .picture img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+  }
+
+  .intro {
+    background-color: white;
+    width: 375px;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+    text-align: center;
+  }
+
+  .container2 {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* <!--image 2, psych, neuro, and out of interest tabs stored in here-->*/
+
+  .pro-mid {
+    background-image: url(Assets/foggymtn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit:contain;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+  .courses {
+      background: black;
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 70%;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+  }
+
+  /*images, github links, and titles to past projects stored in here*/
+
+  .black {
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .box {
+    color: black;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    height: 100px;
+    width: 250px;
+    margin: auto;
+  }
+
+  .container-a {
+    background-color: #32B5CC;
+    width: 600px;
+    height: 450px;
+    padding-top: 25px;
+    justify-content: center;
+  }
+
+  .container-a img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+  }
+
+  .container-b {
+    background-color: #32B5CC;
+    width: 600px;
+    height: 450px;
+    padding-top: 25px;
+  }
+
+  .container-b img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+  }
+
+  .container-c {
+    background-color: #32B5CC;
+    width: 600px;
+    height: 450px;
+    margin-top: 25px;
+    padding-top: 25px;
+  }
+
+  .container-c img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+  }
+
+  .container-d {
+    background-color: #32B5CC;
+    width: 600px;
+    height: 450px;
+    margin-top: 25px;
+    padding-top: 25px;
+  }
+
+  .container-d img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+  }
+
+  /*resume link and contact me box stored in here*/
+
+  .container3 {
+    height: 100%;
+    background-image: url(Assets/forestroad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume {
+    height: 100px;
+    width: 600px;
+    margin: auto;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    justify-content: center;
+  }
+
+  .resume h3 {
+    background-color: white;
+      color: black;
+      padding-top: 25px;
+      text-align: center;
+      width: 400px;
+      margin: auto;
+      height: 50px;
+  }
+
+  .contact {
+    background-color: #32B5CC;
+    width: 600px;
+    height: 450px;
+    margin-top: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+  }
+
+  .contact h3 {
+    background-color: white;
+      color: black;
+      text-align: center;
+      width: 400px;
+      padding-top: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin: auto;
+      height: 50px;
+  }
+
+  .contact-box {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    position: absolute;
+     margin: auto;
+     justify-content: center;
+  }
+
+  form {
+      margin: 75px;
+  }
+
+  .input-field {
+      width: 400px;
+      height: 40px;
+      margin-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid #777;
+      border-radius: 14px;
+      outline: none;
+  }
+
+  .textarea-field {
+        height:150px;
+        padding-top: 10px;
+
+  }
+
+  .btn {
+      border-radius: 20px;
+      color:#fff;
+      margin-top: 18px;
+      padding: 10px;
+      background-color: #EF94DD;
+      font-size: 12px;
+      border: none;
+      cursor: pointer;
+  }
+
+  /*this is the footer*/
+
+  .container-f {
+    height: 70px;
+    width: 100%;
+    background-color: #EF94DD;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5px;
+    margin-top: 20px;
+  }

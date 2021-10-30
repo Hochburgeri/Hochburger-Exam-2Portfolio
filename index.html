@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMH Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!--navigation bar on top of webpage-->
+	<div class="navigation-bar-container">
+		<div class="nav-container">
+			<div class="logo-container">
+				<img src="Assets/ihlogo.png" height="70px" >
+			</div>
+			<div class="navbar">
+				<div class="nav-mobile">
+					<a href="#" id="nav-toggle"><span></span></a>
+				</div>
+				<ul class="nav-list">
+					<li><a href="#top">Introduction</a></li>
+					<li><a href="#middle">Courses</a></li>
+					<li><a href="#sortamiddle">Projects</a></li>
+					<li><a href="#bottom">Contact Me</i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <!--image 1, grad year, name, image of myself, and intro stored in here-->
+    <div class="container1">
+        <div class="banner">
+            <h2 id="top">New College of Florida Class of 2022</h2>
+        </div>
+        <div class="first-box">
+                <div class="name">
+                    <h2>Isabella Hochburger</h2>
+                </div>
+            <div class="combine">
+            <div class="picture">
+                    <img src="Assets/me.jpg" alt="IMH">
+            </div>
+            <div class="intro">
+                <h2>Introduction</h2>
+                    <h4></br>I am 22 years old and currently a full-time student working towards a degree in Biological Psychology/Neuroscience;
+                     I am in my senior year, and I am ready to graduate. I spend a lot of time doing homework, but I am also a mother
+                    to an adorable little boy, so when I am not at school or doing homework, I dedicate every moment he's 
+                    awake playing with dinosaurs, reading books, watching child-friendly YouTube videos, and going on walks
+                    with him. My favorite tv genre is Reality TV and I especially like the 90-day Fiance universe.</h4></br>
+                    <a href="https://www.linkedin.com/in/isabella-maria-hochburger-19583b224" base target="_blank">You can locate my Linkedin profile here</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--image 2, psych, neuro, and out of interest tabs stored in here-->
+<div class="pro-mid">
+    <div class="container2">
+        <div class=courses>
+            <h2 id="middle">Courses Taken In College:</h2>
+        </div>
+        <div class="mytabs">
+            <input type="radio" id="tabfree" name="mytabs" checked="checked">
+            <label for="tabfree">Psychology</label>
+            <div class="tab">
+            <h2>Psychology</h2>
+            <p>Intro to Psychology: Memory Development</br>Cognitive Psychology</br>Biological Psychology</br>Social Psychology</br>Personality Psychology</br>Research Methods</br>Statistics for the Social Sciences</br>Psychology Senior Seminar</p>
+            </div>
+        
+            <input type="radio" id="tabsilver" name="mytabs">
+            <label for="tabsilver">Neuroscience/Biology</label>
+            <div class="tab">
+            <h2>Neuroscience/Biology</h2>
+            <p>Behavioral Endocrinology</br>History of Biomedicine</br>Intro to Biology 1 & 2</br>Drugs & Behavior</br>fNIRS Lab</br>Neuroscience of Sport & Exercise</br>Advanced Topics in Cognitive Neuroscience</p>
+            </div>
+        
+            <input type="radio" id="tabgold" name="mytabs">
+            <label for="tabgold">Out of Interest</label>
+            <div class="tab">
+            <h2>Out of Interest</h2>
+            <p>Intermediate German</br>Advanced German</br>Little Red Riding Hood In Text & Film</br>Intro to Poetry</br>Intro to Forensic Science</br>Front-End Web Development</br>Global Mental Health</p>
+            </div>
+    </div>
+    <!--images, github links, and titles to past projects stored in here-->
+    <div class="black">
+        <h2 id="sortamiddle">Front-End WD Projects:</h2>
+    </div>
+    <div class="projects">
+        <div class="container-a">
+            <img src="Assets/cookieshop.jpeg">
+            <a href="https://hochburgeri.github.io/IMH-Cookie-Shop/" base target="_blank"><button class="box">Shop</button></a>
+        </div>
+        <div class="container-b">
+            <img src="Assets/lilnasx.jpeg">
+            <a href="https://hochburgeri.github.io/IMH-Lil-Nas-X/" base target="_blank"><button class="box">Lil Nas X Tour</button></a>
+        </div>
+        <div class="container-c">
+            <img src="Assets/metz.jpeg">
+            <a href="https://hochburgeri.github.io/Porter-Hochburger-Metz-Redesign/" base target="_blank"><button class="box">NCF Cafeteria</button></a>
+        </div>
+        <div class="container-d">
+            <img src="Assets/question.jpg">
+            <a href="#"><button class="box">Coming Soon</button></a>
+        </div>
+    </div>
+</div>
+    <!--resume link and contact me box stored in here-->
+<div class="container3">
+    <div class="resume">
+        <a href="Assets/resume.pdf" base target="_blank"><h3>You can locate my resume here</h3></a>
+    </div>
+    <div class="contact">
+        <h3 id="bottom">Contact Me</h3>
+        <div class="contact-box"></div>
+        <form>
+            <input type="text" class="input-field" placeholder="Your Name">
+            <input type="text" class="input-field" placeholder="Your e-mail">
+            <input type="text" class="input-field" placeholder="Subject">
+            <textarea type="text" class="input-field text area-field" placeholder="Your Message"></textarea>
+            <button type="button" onclick="clicked_on()" id="s-click" class="btn">Send Message</button>
+        </form>
+        </div>
+    </div>
+</div>
+    <!--this is the footer-->
+<div class="container-f"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
